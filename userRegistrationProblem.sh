@@ -27,10 +27,20 @@ fi
 ######## Email Validation
 
 read -p "Enter email id: " email
-#pattern3="[a-z]{3}[.][a-z]{3}[@][a-z]{2}[.][a-z]{2}[.][a-z]{2}"
+pattern3="[a-z]{3}[.][a-z]{3}[@][a-z]{2}[.][a-z]{2}[.][a-z]{2}"
 if [[ $email =~ $pattern3 ]]
 then
    echo "Email is valid"
 else
    echo "Email is not valid"
+fi
+
+####### Phone Number Validation
+read -p "Enter phone number: " phoneNum
+pattern4="[1-9]{2} [1-9]{1}[0-9]{9}"
+if [[ $phoneNum =~ $pattern4 ]]
+then
+   echo "Phone Number is valid"
+else
+   echo "Phone Num is not valid"
 fi
