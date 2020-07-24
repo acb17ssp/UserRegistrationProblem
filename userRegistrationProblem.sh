@@ -24,4 +24,13 @@ else
 	echo "Last Name is not valid"
 fi
 
+######## Email Validation
 
+read -p "Enter email id: " email
+#pattern3="[a-z]{3}[.][a-z]{3}[@][a-z]{2}[.][a-z]{2}[.][a-z]{2}"
+if [[ $email =~ $pattern3 ]]
+then
+   echo "Email is valid"
+else
+   echo "Email is not valid"
+fi
