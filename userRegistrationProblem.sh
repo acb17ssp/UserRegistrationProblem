@@ -36,6 +36,7 @@ else
 fi
 
 ####### Phone Number Validation
+
 read -p "Enter phone number: " phoneNum
 pattern4="[1-9]{2} [1-9]{1}[0-9]{9}"
 if [[ $phoneNum =~ $pattern4 ]]
@@ -44,3 +45,16 @@ then
 else
    echo "Phone Num is not valid"
 fi
+
+####### Password Validation
+
+read -p "Enter password: " password
+pattern5="[a-z A-Z 1-9]{8,}"
+if [[ $password =~ $pattern5 ]]
+then
+   echo "Password is valid"
+else
+   echo "Password is not valid"
+fi
+
+
