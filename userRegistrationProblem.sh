@@ -49,7 +49,7 @@ fi
 ####### Password Validation
 
 read -p "Enter password: " password
-pattern5="[a-z A-Z 1-9]{8,}"
+pattern5="[a-zA-Z1-9]{8,}$"
 if [[ $password =~ $pattern5 ]]
 then
    echo "Password is valid"
