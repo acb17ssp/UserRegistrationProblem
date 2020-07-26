@@ -52,10 +52,13 @@ read -p "Enter password: " password
 
 digit="[0-9]+"
 upperCase="[A-Z]{1,}"
+specialChar="[@#%^-*+/]{1}"
 
-if [[ ${#password} -ge 8 ]] && [[ "$password"==[[:lower:]]+ ]] && [[ $password=~$upperCase ]] && [[ $password =~ $digit ]]
+if [[ ${#password} -ge 8 ]] && [[ "$password"==[[:lower:]]+ ]] && [[ $password=~$upperCase ]] && [[ $password =~ $digit ]] && [[ $password=~$specialChar ]]
 then
 	echo "Password is valid"
 else
 	echo "Password is not valid"
 fi
+
+# Exactly 1 special character - not working in Git bash but password accepts multiple special characters
