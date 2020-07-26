@@ -61,4 +61,4 @@ else
 	echo "Password is not valid"
 fi
 
-# Exactly 1 special character - not working in Git bash but password accepts multiple special characters
+## Exactly 1 special character - not working in Git bash but password accepts multiple special characters
