@@ -49,12 +49,13 @@ fi
 ####### Password Validation
 
 read -p "Enter password: " password
-pattern5="[a-zA-Z1-9]{8,}$"
-if [[ $password =~ $pattern5 ]]
+
+digit="[0-9]+"
+upperCase="[A-Z]{1,}"
+
+if [[ ${#password} -ge 8 ]] && [[ "$password"==[[:lower:]]+ ]] && [[ $password=~$upperCase ]]
 then
-   echo "Password is valid"
+	echo "Password is valid"
 else
-   echo "Password is not valid"
+	echo "Password is not valid"
 fi
-
-
