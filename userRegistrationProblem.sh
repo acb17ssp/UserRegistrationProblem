@@ -27,7 +27,7 @@ fi
 ######## Email Validation
 
 read -p "Enter email id: " email
-pattern3="[a-z]{3}[.][a-z]{3}[@][a-z]{2}[.][a-z]{2}[.][a-z]{2}"
+pattern3="^[A-Za-z0-9]{1,}([._+-][0-9a-zA-Z]+)*[@]{1}[a-zA-Z0-9]{1,}\.[A-Za-z]{2,4}([.][a-zA-Z]{2,3}){0,1}$"
 if [[ $email =~ $pattern3 ]]
 then
    echo "Email is valid"
