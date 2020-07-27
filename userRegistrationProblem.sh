@@ -3,7 +3,7 @@
 ####### First Name Validation
 
 read -p "Enter first name: " firstName
-pattern1="^[A-Z]{1}[a-z]{2}$"
+pattern1="^[A-Z]{1}[a-z]{2}"
 
 if [[ $firstName =~ $pattern1 ]]
 then
@@ -15,7 +15,7 @@ fi
 ####### Last Name Validation
 
 read -p "Enter last name: " lastName
-pattern2="^[A-Z]{1}[a-z]{2}$"
+pattern2="^[A-Z]{1}[a-z]{2}"
 
 if [[ $lastName =~ $pattern2 ]]
 then
